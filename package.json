@@ -1,0 +1,40 @@
+{
+  "name": "uscf-pairings",
+  "version": "1.0.0",
+  "description": "Generates Swiss and round-robin pairings to USCF specifications",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf dist/* && tsc -p tsconfig.json && rollup --config rollup.config.ts --configPlugin typescript",
+    "ts": "rm -rf dist/* && tsc -p tsconfig.json",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slashinfty/uscf-pairings.git"
+  },
+  "keywords": [
+    "uscf",
+    "chess",
+    "swiss",
+    "round-robin",
+    "pairings"
+  ],
+  "author": "Matt Braddock",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/slashinfty/uscf-pairings/issues"
+  },
+  "homepage": "https://github.com/slashinfty/uscf-pairings#readme",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.16.3",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "rollup": "^3.21.2",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  }
+}
